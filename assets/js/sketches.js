@@ -1,6 +1,105 @@
 
 export const sketches = [
     {
+        title: 'Next One',
+        artist: 'S. Finder',
+        longArtist: 'Stud Finder',
+        releaseDate: 'February 18th, 2024',
+        artLink: 'nxtproj.jpg',
+        trackList: [
+            {
+                track: '0 Dayz',
+                length: '1:47',
+                url: 'no-nm0d',
+                fileName: '',
+                daw: '',
+                date: '',
+                started: '',
+            },
+            {
+                track: 'Dream Cym Loop',
+                length: '1:08',
+                url: 'no-dcl',
+                fileName: '',
+                daw: '',
+                date: '',
+                started: '',
+            },
+            {
+                track: 'It Is Forever.',
+                length: '2:31',
+                url: 'no-itisforever',
+                fileName: '',
+                daw: '',
+                date: '',
+                started: '',
+            },
+            {
+                track: 'Low Registration',
+                length: '1:41',
+                url: 'no-lr',
+                fileName: '',
+                daw: '',
+                date: '',
+                started: '',
+            },
+            {
+                track: 'Nobody Cry at the Circus',
+                length: '2:29',
+                url: 'no-ncatc',
+                fileName: '',
+                daw: '',
+                date: '',
+                started: '',
+            },
+            {
+                track: 'Thin Skinned Loop',
+                length: '2:26',
+                url: 'no-tsl',
+                fileName: '',
+                daw: '',
+                date: '',
+                started: '',
+            },
+        ]
+    },
+    {
+        title: 'Res Ipsa Loquitur',
+        artist: 'L. Mauro',
+        longArtist: 'Lukasz Mauro',
+        releaseDate: 'September 26th, 2023',
+        artLink: 'resipsa.jpg',
+        trackList: [
+            {
+                track: 'Matt Kacsmaryk Goes 2 Court',
+                length: '9:19',
+                url: 'ril-mkg2c',
+                fileName: '',
+                daw: '',
+                date: '',
+                started: '',
+            },
+            {
+                track: "Guns 4 Free 'n Tennessee",
+                length: '2:06',
+                url: 'ril-g4fit',
+                fileName: '',
+                daw: '',
+                date: '',
+                started: '',
+            },
+            {
+                track: "She 8 the Whole Block",
+                length: '6:13',
+                url: 'ril-s8twb',
+                fileName: '',
+                daw: '',
+                date: '',
+                started: '',
+            },
+        ]
+    },
+    {
         title: 'Studs',
         artist: 'S. Finder',
         longArtist: 'Stud Finder',
@@ -150,7 +249,6 @@ export const sketches = [
         longArtist: 'Lukasz Mauro',
         releaseDate: 'November 8th, 2022',
         artLink: 'unredacted.png',
-        
         trackList: [
             {
                 track: 'TFMR2Y',

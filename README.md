@@ -38,13 +38,12 @@ v1.79 - MIT - For Good.
 
 
 * #### Contribution:
-    If you enjoyed this project and would like to keep up to date with any new additions, feel free to follow my git hub! If you had any questions, comments, concerns or feedback, shoot me a message!
+    If you enjoyed this project and would like to keep up to date with any new additions, We'd love to hear from you. If you had any questions, comments, concerns or feedback, please send us an email.
 
 * ###### Contact:
-    - Email - Hexaforest@gmail.com
-    - Github - https://github.com/ForestW70
+    - Email - Admin@burnthis.space
+    - Github - https://github.com/Admin-IJAB
     - Soundcloud - https://soundcloud.com/itsjustaburner
 
 - ###### Links:    
     - [Visit page](https://burnthis.space)
-    - [Visit repo](https://github.com/ForestW70/sketches-bcc-client)
