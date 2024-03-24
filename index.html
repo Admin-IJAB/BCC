@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/player.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/modal.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="https://forestw70.github.io/sketches-bcc-client/assets/images/sketches.jpg">
+    <title>Sketches </title>
+</head>
+
+<body class="body-mod">
+    <div class="ctrl-wrapper">
+        <div id="guyUpTop">
+            <div class="brander">
+                <img src="./assets/images/burner b logo web.png">
+                <h2>https://burnthis.space</h2>
+            </div>
+    
+            <div class="socials">
+                <span>Channels➫ </span>
+                <a href="https://soundcloud.com/itsjustaburner">SC</a>
+                <a href="https://itsjustaburner.bandcamp.com/">BC</a>
+                <a href="https://open.spotify.com/artist/1vsuONnnP6y0854MRVuAYr">SP1</a>
+                <a href="https://open.spotify.com/artist/6GBjApD3lOK9w4wjWyG9GX">SP2</a>
+                <a href="https://www.instagram.com/itsjustaburner/">IG1</a>
+                <a href="https://www.instagram.com/lukaszmauro/?hl=en">IG2</a>
+                <a href="https://www.twitch.tv/ijaburner">TW</a>
+            </div>
+        </div>
+        <div id="wellHeyThere">
+            'Sum Sketches
+    
+        </div>
+
+
+        <div class="ctrl-box">
+            <audio id="player" controls>
+                <source src="" type="audio/mp3">
+            </audio>
+
+            <div id="trackController">
+                <article id="anotherPlayer">
+
+                    <img id="albumPic" src="https://picsum.photos/25">
+                    <div id="nowPlayingInfo">
+                        <span id="artistName"></span>
+                        <span id="trackName">No track queued!</span>
+                        <span id="albumName"></span>
+                    </div>
+                    <div class="controlBtns">
+                        <button type="button" id="pause-play">
+                            <span id="pp" class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                        </button>
+                        <button type="button" class="show-queue" id="backBtn">
+                            <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+                        </button>
+                        <button type="button" id="nextTrack" class="next-song">
+                            <span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+                        </button>
+
+                    </div>
+                </article>
+                <span class="queue-tip" id="qTip">Queue:</span>
+                <article id="qTools">
+                    <button type="button" class="show-queue" id="toggleShowQueue">
+                        <span id="sq" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    </button>
+                    <div id="queueList" class="menu-flex"></div>
+                    <div id="altText" class="command">
+                        <span>Wieners</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="controlers">
+        <button type="button" id="viewAlbums" class="view-button">
+            Album View
+        </button>
+        <button type="button" id="viewSongs" class="view-button">
+            Song View
+        </button>
+        <button type="button" id="viewOptions" class="view-button">
+            Options View
+        </button>
+        <button id="returnToTop" type="button">
+            Back to top ^
+        </button>
+    </section>
+
+    <!-- VIEWS -->
+    <section id="disco">
+    </section>
+
+    <section id="list" class="hide">
+        <div class="song-list-row" id="headerRow">
+            <span data-sort-by="trkNum">#</span>
+            <span data-sort-by="trkNme">Song</span>
+            <span data-sort-by="trkLen">Length</span>
+            <span data-sort-by="epTtl">Ep</span>
+            <span data-sort-by="artist">Artist</span>
+            <span data-sort-by="trkUrl">Song Url</span>
+            <span data-sort-by="trkOg">File</span>
+            <span data-sort-by="trkDte">Date</span>
+            <span data-sort-by="trkTs">Timestamp</span>
+        </div>
+        <div id="listDump">
+
+        </div>
+    </section>
+
+    <section id="options" class="hide">
+        <div class="option-buttons">
+            <button class="opt-default" type="button" id="autoPlayOption">
+                ~Autoplay~ -- OFF.
+            </button>
+            <button class="opt-default" type="button" id="extrasOption">
+                ~Extra tracks~ -- OFF.
+            </button>
+        </div>
+        <div class="wall-o-text">
+            <p>Welcome to the Sketches player, where you can listen to and have access to much of the Burner Records
+                music catalog, for free.</p>
+            <p>~Currently in alpha~</p>
+            <p><strong>**most songs are ripped to mp3 from unmastered demos, so please be mindful of volume changes
+                    and/or audio player clipping!**</strong></p>
+            <div class="tutorial">
+                <p>here are some of the things you can do:</p>
+                <ul>
+                    <li>Choose between album or song view to browse the catalog's many songs</li>
+                    <li>In song view, you may click each of the colomn header to sort the song list by that criteria
+                        back and forth.</li>
+                    <li>Click on a song-row to load it into the audio player, use either of the play buttons to start
+                        listening</li>
+                    <li>Keep browsing and add any song you'd like to listen too, if a song is already playing, the songs
+                        will be added to the queue.</li>
+                    <li>Click the next track button when you want to move on to the next track.</li>
+                    <li>*You may turn on auto-play above, however on mobile it only works when viewing the page.*</li>
+                    <li>You can click on the current track playing to see a JSON display of the song's data.</li>
+                    <li>If you click on a queue item, you will be shown a similar JSON object, with the options of
+                        adding the song to up next, or remove the song from your queue.</li>
+                    <li>Queue can be shown and hidden</li>
+                    <li>You may use audio element's controls to change song playback speed faster or slower.</li>
+                    <li>You can also use these controls to download any track. just dont forget where you got them and
+                        to show some love on the other channels ;)</li>
+                    <li>Remember, volume can be volitile so be kind to your ears. If you feel responisible enough, you
+                        can click <button type="button" id="addPods">HERE</button> or elsewere on the site to add new
+                        items to the track-pool after page refresh.</li>
+                </ul>
+            </div>
+            <p>Have fun and enjoy these many frequencies, It'll only go up from here ☻</p>
+            <div class="credits">
+                <span>Music from:</span>
+                <h2>Lukasz Mauro</h2>
+                <h2>Stud Finder</h2>
+                <h2>con</h2>
+                <h2>Dj Burna B</h2>
+
+                <span>Design from:</span>
+                <h3>Barney Bozisnky</h3>
+                <h3>Lukasz Mauro</h3>
+                <h3>Forest Wilson</h3>
+
+                <span>Art from:</span>
+                <h4 id="maesButton">Mae K.</h4>
+                <h4 d="aarinsButton">Aarin W.</h4>
+
+                <span>Developed by:</span>
+                <h4>Forest Wilson</h4>
+
+                <span>With various samples and inspiration from:</span>
+                <h5>Boards of canada</h5>
+                <h5>Aphex Twin</h5>
+                <h5>Autechre</h5>
+                <h5>Broadcast</h5>
+                <h5>Animal Collective</h5>
+                <h5>Vashti Bunyan</h5>
+                <h5>Sophie</h5>
+                <h5>Gescom</h5>
+                <h5>GY!BE</h5>
+                <h5>The Kit-Kats</h5>
+                <h5>Jai Paul</h5>
+                <h5>The Microphones</h5>
+                <h5>Pye Corner Audio</h5>
+                <h5>The Internet</h5>
+                <h5>S. Balachander</h5>
+                <h5>And many more.</h5>
+            </div>
+            <h6><a href="https://www.burnthis.space">itsjustaburner</a> ☼ <a
+                    href="https://soundcloud.com/itsjustaburner">Soundcloud</a> ☼ <a
+                    href="https://itsjustaburner.bandcamp.com/music">BandCamp</a> ☼ <a
+                    href="https://www.twitch.tv/ijaburner">Live</a> ☼ 2022</h6>
+
+        </div>
+
+    </section>
+
+    <!-- SONG INFO MODAL -->
+    <section id="qPrompt">
+        <div class="modal-cont">
+            <button type="button" id="closeModal">x</button>
+            <span id="modalSong"></span>
+            <span id="modalDump">
+
+            </span>
+            <button type="button" id="upNextBtn">add to up next?</button>
+            <button type="button" id="removeThisSong">remove from queue?</button>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
+
+<script type="module" src="assets/js/scripts.js"></script>
