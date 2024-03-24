@@ -1,0 +1,470 @@
+.body-mod {
+    /* background-image: url(https://forestw70.github.io/sketches-bcc-client/assets/images/s&ofv1.jpg); */
+    background-blend-mode: luminosity;
+    position: relative;
+}
+
+h2 {
+    font-size: inherit;
+}
+
+#guyUpTop {
+    display: flex;
+    flex-direction: row;
+    font-family: monospace;
+    justify-content: space-between;
+    font-size: 2rem;
+    align-items: center;
+    /* padding-bottom: 10px; */
+}
+
+.brander {
+    display: flex;
+    flex-direction: row;
+}
+
+.brander img {
+    height: 35px;
+    display: inline;
+}
+
+.brander h2 {
+    margin: 0;
+    padding: 5px;
+    font-size: 2.5rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.socials a {
+    padding: 0 5px;
+}
+
+.socials span {
+    font-size: 2.5rem;
+}
+
+
+#wellHeyThere {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 3vmin;
+    font-family: serif;
+    background-color: floralwhite;
+    text-shadow: 0 2px 3px darkgrey;
+}
+
+.ctrl-wrapper {
+    position: relative;
+}
+
+.ctrl-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* position: fixed; */
+}
+
+
+/*  */
+/* View Change Controllers */
+/*  */
+#controlers {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.view-button {
+    letter-spacing: 5px;
+    border: none;
+    background-color: inherit;
+    width:50%;
+    border-left: 10px double #800808;
+    border-right: 10px double #8e8e8e;
+}
+
+
+.curr-view {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: #fff;
+}
+
+/*  */
+/* hide disco */
+/*  */
+/* .info-container *:nth-child(n+2) {
+    display: inline-block;
+    margin: auto;
+    background-color: red;
+} */
+
+
+/*  */
+/* Album View */
+/*  */
+#disco {
+    font-size: 20px;
+    margin-top: 0px;
+    /*  */
+    display: block;
+    flex-wrap: wrap;
+}
+
+.disco-item {
+    margin: 30px 50px;
+    border-top: 3px solid #c1c2c3;
+}
+
+.info-container {
+    display: flex;
+    cursor: alias;
+    margin: 10px 0 0 50px;
+    /* width: 400px; */
+}
+
+.info-container > img {
+    height: 250px;
+    width: 250px;
+    /* margin-right: 15px; */
+}
+
+.info-container > h3 {
+    font-family: serif;
+    margin: 5px 10px;
+}
+
+.info-container > p {
+    font-size: 10px;;
+    font-style: italic;
+
+}
+
+.track-container {
+    margin: 20px 0 20px 50px;
+    /*  */
+    /*  */
+    display: flex;
+    flex-direction: column;
+}
+
+.t-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-bottom: 10px;
+    border: none;
+    background-color: inherit;
+    font-family: sans-serif;
+    color: black;
+    letter-spacing: -1px;
+    /* text-shadow: 0px 0px 5px white; */
+}
+
+.t-row:hover {
+    margin-bottom: 9px;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+
+.track-num {
+    justify-self: left;
+}
+
+.album-track {
+    justify-self: left;
+}
+
+
+/*  */
+/* Song View */
+/*  */
+#list {
+    /* overflow-x: scroll; */
+}
+
+#headerRow {
+    font-family: serif;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: rgb(78, 78, 78);
+    
+}
+
+.list-reverse {
+    font-style: italic;
+}
+
+.song-list-row {
+    display: grid;
+    width: 100%;
+    /* trkNum, trkName, trkLength, epName, artist, trackurl, ogfilename, date, time */
+    grid-template-columns: .5fr 3fr .7fr 1fr 2fr 2fr 2fr 1fr 1fr;
+    border: none;
+}
+
+.song-list-row > span {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    padding: 2px 3px 0 0;
+}
+
+.song-list-row:nth-child(2n+1) {
+    background-color: white;
+}
+
+/* header row */
+#headerRow span:hover::after {
+    content: "...Sort?"
+}
+
+.song-list-row:hover {
+    border: none;
+    background-color: rgba(255, 105, 180, 0.212);
+}
+
+
+/*  */
+/* Options and Info View*/
+/*  */
+/* h2 {
+    font-size: inherit;
+} */
+
+.credits > h2, .credits > h3, .credits h4, .credits > h5 {
+    margin:0;
+    margin-left: 10px;
+}
+
+.credits > span {
+    color:grey;
+}
+
+.wall-o-text {
+    margin:10px;
+}
+
+.opt-default {
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid black;
+    cursor: alias;
+    font-family: sans-serif;
+    background-color: red;
+    width: 100%;
+}
+
+.opt-on {
+    background-color: green;
+}
+
+.tutorial {
+    margin-right: 20px;
+}
+
+#maesButton, #aarinsButton {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    /* margin-left: 10px; */
+}
+
+#maesButton:hover, #aarinsButton:hover {
+    font-style: italic;
+}
+
+.egg-on {
+    color: pink;
+}
+
+/* utilities */
+#returnToTop {
+    position: fixed;
+    display: none;
+    top: 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 15px;
+    background-color: #7fffd4b8;
+}
+
+.menu-flex {
+    display: flex;
+}
+
+.menu-hide {
+    display: none;
+}
+
+.menu-block {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* mock itunes album view */
+/* .track-container, .info-container h2, .info-container h3, .info-container p {
+    display: none;
+}
+
+.disco-item {
+    border: none;
+}
+
+#disco {
+    display: flex;
+} */
+
+/*  */
+/* Screen Events */
+/*  */
+@media screen and (max-width: 1000px) {
+    .song-list-row {
+        grid-template-columns: .25fr 3fr .7fr 1.25fr 1.5fr 2fr 1.75fr 1.5fr 1fr;
+    }
+    
+    .song-list-row > span {
+        /* font-size: 1.8vmin; */
+        padding: 2px;
+        height: 30px;
+        align-items: center;
+        border-left: 1px solid white;
+    }
+
+    .command {
+        display: none;
+    }
+
+    .song-list-row:hover {
+        border:none;
+        background-color: rgba(255, 105, 180, 0.212);
+    }
+    .song-list-row:nth-child(1):hover {
+        justify-self: center;
+    }
+    .song-list-row:nth-child(1) span:hover::after {
+        content: ""
+    }
+    
+    #list {
+        width: 1000px;
+        /* overflow: hidden; */
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .info-container > img {
+        height: 150px;
+        width: 150px;
+    }
+    /* #albumPic {
+        height: 70px;
+        width: 70px;
+    } */
+    .info-container > h3 {
+        margin: 5px;
+    }
+    .glyphicon {
+        font-size: 20px;
+    }
+    #trackController {
+        flex-direction: column;
+    }
+    #trackController > article {
+        width: 100%;
+        height: 45%;
+    }
+    .t-row {
+        font-size: 12px;
+    }
+    .view-button {
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    .modal-cont {
+        width: 80%;
+        font-size: 10px;
+    }
+
+    .view-button {
+        font-size: 10px;
+    }
+
+    #guyUpTop {
+        flex-direction: column;
+        
+        /* font-size: 1rem; */
+    }
+
+    .brander img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .info-container > h3 {
+        font-size: 1.8vmax;
+        font-style: italic;
+    }
+    .info-container > p {
+        /* font-size: 1.5vmax; */
+        font-style: normal;
+    }
+    .info-container > h2 {
+        font-size: 3vmax;
+        writing-mode: vertical-rl;
+        margin: 5px;
+        padding-top: 5px;
+    }
+
+    #headerRow > span {
+        /* font-size: 8px; */
+        /* writing-mode: vertical-rl; */
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .info-container > h3 {
+        font-size: 2vmax;
+        font-style: italic;
+        writing-mode: vertical-rl;
+        
+    }
+    #nowPlayingInfo > span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .info-container > p {
+        font-size: 8px;
+        margin: 10px;
+        writing-mode: vertical-rl;
+    }
+    
+    #nowPlayingInfo > * {
+        font-size: 10px;
+    }
+}
