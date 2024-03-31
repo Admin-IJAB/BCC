@@ -1,7 +1,14 @@
+html {
+    scrollbar-gutter: stable;
+}
+
 .body-mod {
     /* background-image: url(https://forestw70.github.io/sketches-bcc-client/assets/images/s&ofv1.jpg); */
     background-blend-mode: luminosity;
     position: relative;
+    overflow-x: hidden;
+    /* width: 100vw; */
+    /* margin: 10px; */
 }
 
 h2 {
@@ -13,9 +20,9 @@ h2 {
     flex-direction: row;
     font-family: monospace;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 3rem;
     align-items: center;
-    /* padding-bottom: 10px; */
+    margin: 2px;
 }
 
 .brander {
@@ -30,23 +37,26 @@ h2 {
 
 .brander h2 {
     margin: 0;
-    padding: 5px;
-    font-size: 2.5rem;
+    /* padding: 5px; */
+    font-size: 4rem;
 }
 
 .socials {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 15px;
+    /* margin: 0 15px; */
 }
 
 .socials a {
-    padding: 0 5px;
+    padding: 0 3px;
+    font-size: 2rem;
+    font-family: serif;
 }
 
 .socials span {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    padding-right: 10px
 }
 
 
@@ -54,7 +64,7 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 15px 0;
+    /* padding: 15px 0; */
     font-size: 3vmin;
     font-family: serif;
     background-color: floralwhite;
@@ -129,7 +139,7 @@ h2 {
 .info-container {
     display: flex;
     cursor: alias;
-    margin: 10px 0 0 50px;
+    margin: 10px 0;
     /* width: 400px; */
 }
 
@@ -151,7 +161,7 @@ h2 {
 }
 
 .track-container {
-    margin: 20px 0 20px 50px;
+    /* margin: 20px 0 20px 50px; */
     /*  */
     /*  */
     display: flex;
@@ -160,7 +170,7 @@ h2 {
 
 .t-row {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: .5fr 3fr 1fr;
     margin-bottom: 10px;
     border: none;
     background-color: inherit;
@@ -189,7 +199,7 @@ h2 {
 /* Song View */
 /*  */
 #list {
-    /* overflow-x: scroll; */
+    overflow-x: auto;
 }
 
 #headerRow {
@@ -206,17 +216,22 @@ h2 {
 
 .song-list-row {
     display: grid;
-    width: 100%;
+    width: 100vw;
     /* trkNum, trkName, trkLength, epName, artist, trackurl, ogfilename, date, time */
-    grid-template-columns: .5fr 3fr .7fr 1fr 2fr 2fr 2fr 1fr 1fr;
+    grid-template-columns: .5fr 1fr 3fr .5fr 1.5fr 1.5fr 1fr .7fr .7fr;
     border: none;
+    padding: 0;
 }
 
 .song-list-row > span {
-    display: flex;
+    /* display: inline; */
     justify-content: left;
     text-align: left;
     padding: 2px 3px 0 0;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 255, 255)); */
 }
 
 .song-list-row:nth-child(2n+1) {
@@ -231,6 +246,11 @@ h2 {
 .song-list-row:hover {
     border: none;
     background-color: rgba(255, 105, 180, 0.212);
+}
+
+.sr-mob-cut {
+    font-style: italic;
+    /* display: inline; */
 }
 
 
@@ -338,7 +358,7 @@ h2 {
 /*  */
 @media screen and (max-width: 1000px) {
     .song-list-row {
-        grid-template-columns: .25fr 3fr .7fr 1.25fr 1.5fr 2fr 1.75fr 1.5fr 1fr;
+        grid-template-columns: .2fr .5fr 1.5fr .3fr .7fr .7fr .5fr .5fr .5fr;
     }
     
     .song-list-row > span {
@@ -369,6 +389,12 @@ h2 {
         /* overflow: hidden; */
         overflow-x: scroll;
     }
+    .brander > h2 {
+        font-size: 3.5rem;
+    }
+    .socials > span {
+        font-size: 2.5rem;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -380,6 +406,10 @@ h2 {
         height: 70px;
         width: 70px;
     } */
+    #guyUpTop {
+        flex-direction: column;
+    
+    }
     .info-container > h3 {
         margin: 5px;
     }
@@ -412,13 +442,15 @@ h2 {
         font-size: 10px;
     }
 
-    #guyUpTop {
-        flex-direction: column;
-        
-        /* font-size: 1rem; */
+    .brander img {
+        /* display: none; */
     }
 
-    .brander img {
+    .song-list-row {
+        grid-template-columns: .5fr 2fr 3fr 1fr 2fr;
+    }
+
+    .sr-mob-cut {
         display: none;
     }
 }
@@ -443,6 +475,12 @@ h2 {
         /* font-size: 8px; */
         /* writing-mode: vertical-rl; */
     }
+    .brander > h2 {
+        font-size: 3rem;
+    }
+    .socials > span {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -466,5 +504,12 @@ h2 {
     
     #nowPlayingInfo > * {
         font-size: 10px;
+    }
+
+    .brander > h2 {
+        font-size: 2.5rem;
+    }
+    .socials > span {
+        font-size: 2rem;
     }
 }

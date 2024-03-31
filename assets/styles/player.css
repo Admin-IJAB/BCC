@@ -111,13 +111,13 @@ audio::-webkit-media-controls-timeline {
 .command > span {
     position: absolute;
     z-index: 0;
-    left: 200px;
-    bottom: 25px;
-    font-size: 30px;
+    left: 80px;
+    bottom: 60px;
+    font-size: 50px;
     font-weight: 900;
     color: #cbf9ec;
     text-shadow: 0 0 69px powderblue;
-    font-family: fantasy;
+    font-family: math;
 }
 
 #queueList {

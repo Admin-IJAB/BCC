@@ -1,7 +1,8 @@
 
 export const sketches = [
     {
-        title: 'Next One',
+        title: "Next One",
+        titleSh: 'NO',
         artist: 'S. Finder',
         longArtist: 'Stud Finder',
         releaseDate: 'February 18th, 2024',
@@ -64,7 +65,8 @@ export const sketches = [
         ]
     },
     {
-        title: 'Res Ipsa Loquitur',
+        title: "Res Ipsa Loquitur",
+        titleSh: 'RIL',
         artist: 'L. Mauro',
         longArtist: 'Lukasz Mauro',
         releaseDate: 'September 26th, 2023',
@@ -74,33 +76,34 @@ export const sketches = [
                 track: 'Matt Kacsmaryk Goes 2 Court',
                 length: '9:19',
                 url: 'ril-mkg2c',
-                fileName: '',
-                daw: '',
-                date: '',
-                started: '',
+                fileName: '--',
+                daw: '--',
+                date: '--',
+                started: '--',
             },
             {
                 track: "Guns 4 Free 'n Tennessee",
                 length: '2:06',
                 url: 'ril-g4fit',
-                fileName: '',
-                daw: '',
-                date: '',
-                started: '',
+                fileName: '--',
+                daw: '--',
+                date: '--',
+                started: '--',
             },
             {
                 track: "She 8 the Whole Block",
                 length: '6:13',
                 url: 'ril-s8twb',
-                fileName: '',
-                daw: '',
-                date: '',
-                started: '',
+                fileName: '--',
+                daw: '--',
+                date: '--',
+                started: '--',
             },
         ]
     },
     {
-        title: 'Studs',
+        title: "Studs",
+        titleSh: 'STUDS',
         artist: 'S. Finder',
         longArtist: 'Stud Finder',
         releaseDate: 'October 10th, 2022',
@@ -245,6 +248,7 @@ export const sketches = [
     },
     {
         title: "Redacter",
+        titleSh: "RDKTR",
         artist: 'L. Mauro',
         longArtist: 'Lukasz Mauro',
         releaseDate: 'November 8th, 2022',
@@ -352,7 +356,8 @@ export const sketches = [
         ]
     },
     {
-        title: 'BCC',
+        title: "Before Common Control",
+        titleSh: 'BCC',
         artist: 'L. Mauro',
         longArtist: 'Lukasz Mauro',
         releaseDate: 'November 21st, 2021',
@@ -514,7 +519,8 @@ export const sketches = [
         ]
     },
     {
-        title: "BR/CH",
+        title: "Boiler Room / Chiminy Harker",
+        titleSh: "BR/CH",
         artist: 'S. Finder',
         longArtist: 'Stud Finder',
         releaseDate: 'January 10th, 2021',
@@ -541,7 +547,8 @@ export const sketches = [
         ]
     },
     {
-        title: "LL",
+        title: "Lenovo Loosies",
+        titleSh: "LL",
         artist: "S. Finder",
         longArtist: "Stud Finder",
         releaseDate: "May 17th, 2019",
@@ -675,7 +682,8 @@ export const sketches = [
         ]
     },
     {
-        title: 'HMP',
+        title: "Happy Macbook Pro",
+        titleSh: 'HMP',
         artist: 'S. Finder',
         longArtist: 'Stud Finder',
         releaseDate: 'October 9th, 2018',
@@ -811,7 +819,8 @@ export const sketches = [
     },
     
     {
-        title: 'S&OFV1',
+        title: "Sketches & Other Failures Vol. 1",
+        titleSh: 'S&OFV1',
         artist: 'L. Mauro',
         longArtist: 'Lukasz Mauro',
         releaseDate: 'August 28th, 2017',
@@ -884,7 +893,8 @@ export const sketches = [
         ]
     },
     {
-        title: "IB",
+        title: "Idle Bloom",
+        titleSh: "IB",
         artist: 'con',
         longArtist: 'con',
         releaseDate: 'Avril 4th, 2014',
@@ -932,7 +942,8 @@ export const sketches = [
 
 export const lilExtras = [
     {
-        title: "ECT",
+        title: "Etcetera Etcetera",
+        titleSh: "ECT",
         artist: 'L. Mauro',
         longArtist: 'Lukasz Mauro',
         releaseDate: 'N/A',
@@ -1004,7 +1015,8 @@ export const lilExtras = [
         ]
     },
     {
-        title: "Wooly Lavender Demonstrations",
+        title: "Wooly Lavender",
+        titleSh: "WL",
         artist: 'Hww',
         longArtist: 'Hww',
         releaseDate: 'N/A',
@@ -1142,7 +1154,8 @@ export const lilExtras = [
 
 export const pods = [
     {
-        title: "BRSSF",
+        title: "Burner Records Soundscape Source Feed",
+        titleSh: "BRSSF",
         artist: "Burner B",
         longArtist: "DJ Burna B",
         releaseDate: "September 30th, 2018",
@@ -1185,7 +1198,8 @@ export const pods = [
 
 export const shhhhhdontsnitch = [
     {
-        title: 'ALF',
+        title: "All Lights Fucked",
+        titleSh: 'ALF',
         artist: 'Not Us',
         longArtist: 'Definitly not us',
         releaseDate: 'N/A',
@@ -1237,7 +1251,7 @@ export const shhhhhdontsnitch = [
                 started: '--',
             },
             {
-                track: 'untitled',
+                track: 'untitleShd',
                 length: '1:01',
                 url: 'shhhhh/17',
                 fileName: '--',
@@ -1350,7 +1364,8 @@ export const shhhhhdontsnitch = [
 
 export const powerfulSophie = [
     {
-        title: 'RIP',
+        title: "In Tribute Forever",
+        titleSh: 'PWRFL',
         artist: 'Sophie',
         longArtist: 'Sophie Xeon',
         releaseDate: 'N/A',

@@ -89,6 +89,12 @@ export const buildSongView = (songRow) => {
     trackDate.innerText = songRow.startDate;
     trackTimeStamp.innerText = songRow.startTime;
 
+    // 
+    trackUrl.classList.add("sr-mob-cut");
+    trackOgFile.classList.add("sr-mob-cut");
+    trackDate.classList.add("sr-mob-cut");
+    trackTimeStamp.classList.add("sr-mob-cut");
+
     const trackRow = document.createElement("button");
     trackRow.type = "button";
     trackRow.classList.add('song-list-row');
@@ -107,10 +113,10 @@ export const buildSongView = (songRow) => {
 
     const rowFragment = document.createDocumentFragment();
     rowFragment.appendChild(trackNumber);
+    rowFragment.appendChild(trackArtist);
     rowFragment.appendChild(trackName);
     rowFragment.appendChild(trackLength);
     rowFragment.appendChild(albumTitle);
-    rowFragment.appendChild(trackArtist);
     rowFragment.appendChild(trackUrl);
     rowFragment.appendChild(trackOgFile);
     rowFragment.appendChild(trackDate);
