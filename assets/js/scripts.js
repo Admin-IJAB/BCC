@@ -2,6 +2,7 @@ import { sketches, lilExtras, pods, shhhhhdontsnitch, powerfulSophie } from "./s
 import { autoPlayBlurb, xtraTracksBlurb } from "./textVars.js";
 import { createQueueButton, buildAlbumTemplate, buildSongView, buildAlbumView } from "./renders.js"
 import { getNewSortList } from "./sorter.js"
+// import { treeData } from "./helloTree.js";
 
 (function () {
     
@@ -465,6 +466,22 @@ import { getNewSortList } from "./sorter.js"
 
     // 
     // view swap functions and variables
+    // 
+    // LinkTree I ain't paying for that
+    const linkDump = document.getElementById("linkTree");
+    const renderLinkDump = () => {
+        treeData.map(link => {
+            const linkLink = document.createElement("a");
+            linkLink.setAttribute("href", link.url);
+            linkLink.innerText = link.title;
+            if (link.target === 1){
+                linkLink.classList.add("l-target")
+            }
+            linkDump.push(linkLink);
+        })
+    }
+
+    
     // 
     // album view
     const discoContainer = document.getElementById("disco");

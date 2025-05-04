@@ -31,13 +31,13 @@ h2 {
 }
 
 .brander img {
-    height: 35px;
+    height: 100px;
     display: inline;
 }
 
 .brander h2 {
     margin: 0;
-    /* padding: 5px; */
+    align-content: center;
     font-size: 4rem;
 }
 

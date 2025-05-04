@@ -1,0 +1,48 @@
+.link-sharer {
+    background-color: floralwhite;
+}
+
+.link-sharer h1 {
+    justify-self: center;
+    font-size: 3rem;
+}
+
+.link-topper {
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-topper > img {
+    justify-self: center;
+    height: 70px;
+}
+
+#linkTree {
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: 1;
+}
+
+.link-btn {
+    font-size: 1.7rem;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    padding: 20px 0;
+    margin: 10px 0;
+    background-color: #800808;
+    color: white;
+    width: 75%;
+    text-decoration: none;
+    font-family: math, sans-serif;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 10px;
+}
+
+.lil-blurb {
+    font-size: 1rem;
+    color: grey;
+    display: flex;
+    justify-content: center;
+}
